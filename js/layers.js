@@ -385,7 +385,7 @@ addLayer("ach", {
             name: "Exploded",
             unlocked() {return (player.two.total.gte("1") && hasMilestone('two', 1) && hasAchievement(this.layer, 71)) || hasAchievement(this.layer, this.id)},
             done() {return new Decimal(player.two.bombsandbricks.bombused).gte("1")},
-            goalTooltip: "Use a bomb.",
+            goalTooltip: "Use a domb.",
             doneTooltip: "Use a bomb. (Completed)",
             onComplete() {player[this.layer].points = player[this.layer].points.add(1)}
         },
@@ -995,7 +995,7 @@ addLayer("zero", {
             }
         },
     },
-    buyables: {
+    wbuyables: {
         11: {
             title: "Point Buyable",
             unlocked() {
